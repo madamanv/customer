@@ -1,0 +1,25 @@
+
+http://localhost:8080/customer/get/{custId}
+
+
+http://localhost:8080/customer/v1/customer.create
+Header : Content-Type: application/json
+Body
+{
+	"name": "Sai",
+	"address": "Hyderabad",
+	"loanconsent": "N",
+	"salary": "1000",
+	"loanamount":"40000",
+	"mobile": "9581750303",
+	"pannumber": "BDEPM99999"
+}
+
+http://localhost:8080/customer/v1/upload
+
+content-type : application/x-www-form-urlencoded
+
+custId: 70
+
+body: file : filetoupload
+
