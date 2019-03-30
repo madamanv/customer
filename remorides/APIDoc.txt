@@ -23,3 +23,21 @@ custId: 70
 
 body: file : filetoupload
 
+
+
+CREATE TABLE `customer` (
+  `custId` int(10) NOT NULL,
+  `name` varchar(45) NOT NULL,
+  `address` varchar(100) NOT NULL,
+  `loanconsent` varchar(1) DEFAULT NULL,
+  `salary` varchar(100) NOT NULL,
+  `loanref` varchar(10) DEFAULT NULL,
+  `loanamount` varchar(100) DEFAULT NULL,
+  `filecontent` blob,
+  `file_content` longblob,
+  `mobile` varchar(12) DEFAULT NULL,
+  `pannumber` varchar(15) DEFAULT NULL,
+  PRIMARY KEY (`custId`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+commit
